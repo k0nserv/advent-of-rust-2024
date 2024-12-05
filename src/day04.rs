@@ -101,8 +101,6 @@ pub fn star_two(input: &str) -> usize {
             .filter(|(pos, dir)| GridIterator::new(&grid, *pos, *dir).find_needle(&NEEDLE))
             .count();
 
-            if count > 2 {}
-
             count == 2
         })
         .count()
